@@ -1,0 +1,90 @@
+body {
+    background: linear-gradient(to bottom, black, white, #333, #ccc);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-heading {
+    margin: 0;
+    transition: color 0.3s;
+}
+
+.main-heading:hover {
+    color: #d3d3d3;
+    animation: glow 1s infinite;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #d3d3d3, 0 0 20px #d3d3d3, 0 0 30px #d3d3d3;
+    }
+
+    50% {
+        text-shadow: 0 0 20px #d3d3d3, 0 0 30px #d3d3d3, 0 0 40px #d3d3d3;
+    }
+
+    100% {
+        text-shadow: 0 0 10px #d3d3d3, 0 0 20px #d3d3d3, 0 0 30px #d3d3d3;
+    }
+}
+
+
+
+.signup-form {
+    width: 90%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    color: black;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#submit-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: #666;
+}
+
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 600px) {
+    .signup-form {
+        width: 90%;
+        max-width: none;
+    }
+}
